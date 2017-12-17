@@ -14,7 +14,6 @@ print(poker)
 print('---'*20)
 
 # 随机选取一张牌
-color = random.choice(kind)
-num = random.choice(lst1)
-print("Random choice: \n\tcolor:{} card:{}".format(color, num))
+card = random.choice(poker)
+print("Random choice card: {}".format(card))
 print('---'*20)
