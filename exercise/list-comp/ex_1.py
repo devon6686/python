@@ -9,7 +9,7 @@ import random
 
 
 # square(1,10)
-nums = [i**2 for i in range(1,11)]
+nums = [i**2 for i in range(1, 11)]
 print(nums)
 
 # new list
