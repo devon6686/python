@@ -6,7 +6,7 @@
 from inspect import signature
 
 
-def add1(x:int, y:int, *args, **kwargs) -> int :
+def add1(x: int, y: int, *args, **kwargs) -> int:
 	return x + y
 
 
