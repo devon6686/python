@@ -4,7 +4,6 @@
 
 import re
 import requests
-import csv
 import argparse
 from pathlib import Path
 from datetime import datetime
@@ -27,7 +26,7 @@ BASE_URL = "http://nexus.example.com"
 def get_ss_url_from_release_gav(asset_group, asset_name, asset_version, repo='snapshots'):
 	api = "/service/rest/v1/search/assets"
 	url = BASE_URL + api
-	pattern1 = re.compile('.+\.(jar|pom|aar)$')
+	pattern1 = re.compile('.+.(jar|pom|aar)$')
 	pattern2 = re.compile('.+(-sources.jar)$')
 	params = ['repository', 'format', 'maven.groupId', 'maven.artifactId', 'maven.baseVersion']
 	values = [repo, 'maven2', asset_group, asset_name, asset_version + '-SNAPSHOT']

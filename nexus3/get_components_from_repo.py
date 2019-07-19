@@ -1,5 +1,5 @@
 """
-Nexus API
+Nexus function
 """
 
 import requests
@@ -27,7 +27,7 @@ def get_assets_from_repo(params):
 	api = '/service/rest/v1/assets'
 	url = BASE_URL + api
 
-	pattern1 = re.compile('.+\.(jar|pom|aar)$')
+	pattern1 = re.compile('.+.(jar|pom|aar)$')
 	pattern2 = re.compile('.+(-sources.jar)$')
 
 	with requests.get(url, headers=headers, auth=auth_info, params=params) as response:

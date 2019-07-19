@@ -1,3 +1,8 @@
+"""
+gitlab API
+author = 'wanglinxiang'
+"""
+
 import gitlab
 import logging
 from datetime import datetime

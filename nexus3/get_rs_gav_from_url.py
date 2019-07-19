@@ -10,7 +10,7 @@ from datetime import datetime
 
 
 def get_gav_from_url(filename, split_word='http://nexus.example.com/repository/releases/'):
-	pattern1 = re.compile('.+\.(jar|pom|aar)$')
+	pattern1 = re.compile('.+.(jar|pom|aar)$')
 	pattern2 = re.compile('.+(-sources.jar)$')
 
 	with open(filename, encoding='UTF-8') as url_file:

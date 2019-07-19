@@ -1,5 +1,5 @@
 """
-gerrit api
+ Gerrit API
 """
 import requests
 import json
